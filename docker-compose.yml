@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  node:
+    build:
+      context: .
+    container_name: node_container
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "3000:3000"
